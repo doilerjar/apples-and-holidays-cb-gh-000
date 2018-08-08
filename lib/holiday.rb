@@ -98,9 +98,7 @@ def all_supplies_in_holidays(holiday_hash)
         print "  #{key.to_s.capitalize}: "
         puts "#{value.join(", ")}"
       end 
-    end
   end 
-  result.flatten
 end
 
 def all_holidays_with_bbq(holiday_hash)
