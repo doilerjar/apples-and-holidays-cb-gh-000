@@ -58,11 +58,12 @@ def all_winter_holiday_supplies(holiday_hash)
   result = []
   holiday_hash.each do |k,v|
     if k == :winter
-      v.collect.flatten do |key,value|
-        value
+      v.each do |key,value|
+        result << value
       end 
     end
   end 
+  result.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
