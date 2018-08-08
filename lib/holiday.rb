@@ -96,6 +96,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{k.to_s.capitalize}:"
       v.each do |key,value|
         newkey = key.to_s.split(" ")
+        binding.pry 
         puts "  #{newkey}: #{value.join(", ")}"
       end 
   end 
