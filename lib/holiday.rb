@@ -95,6 +95,10 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |k,v|
     puts "#{k.to_s.capitalize}:"
       v.each do |key,value|
+        if key == :fourth_of_july
+          binding.pry 
+        end 
+        
         puts "  #{key.to_s.split("_").capitalize.join(" ")}: #{value.join(", ")}"
       end 
   end 
